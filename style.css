@@ -1,0 +1,14 @@
+/* .indent {
+	padding-left: 20px;
+	list-style-position: inside;
+} */
+
+/* li.indent::marker {
+	content: counter(list-item) ". ";
+} */
+
+
+img {
+	max-width: 75%;
+	height: auto;
+}

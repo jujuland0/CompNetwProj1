@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project 1</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Computer Networking Project 1 : DNS</h1>
+
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="dns.html">DNS</a>
+		<a href="ipaddressing.html">IP Addressing</a>
+		<a href="protocols.html">Protocols</a>
+	</nav>
+
+	<p>How does my domain resolve to an IP address ?</p>
+	
+	<ol>
+		<li>When my domain is entered into a browser, for speed it first checks the cache in case the domain has already been resolved recently. If the IP is already here, it is used.</li>
+		<li>If the browser does not have the IP stored in cache, the OS DNS cache is checked.</li>
+		<ul>
+			<li>Here, I have checked the OS DNS cache using <code>nslookup</code>.</li>
+			<a href="nslookup.png"><img src="nslookup.png" alt="nslookup output"></a>
+		</ul>
+		<li>Finally, it asks a recursive resolver for the IP address, which will be provided by either the ISP of the user, Google DNS, or Cloudflare DNS.</li>
+		<ul>
+			<li>Here, because I am hosting on github, I am suing their DNS servers.</li>
+		</ul>
+	</ol>
+	
+
+</body>
+</html>
