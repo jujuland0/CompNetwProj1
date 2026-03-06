@@ -1,11 +1,50 @@
-/* .indent {
-	padding-left: 20px;
-	list-style-position: inside;
-} */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-/* li.indent::marker {
-	content: counter(list-item) ". ";
-} */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	padding: 20px;
+	color: #333;
+	background-color: #f5f7fb;
+}
+
+header {
+	background: #1f2937;
+	padding: 20px 0;
+}
+
+nav {
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	transition: color 0.2s ease;
+}
+
+nav a:hover {
+	color: #60a5fa;
+}
+
+main {
+	max-width: 900px;
+	margin: 40px auto;
+	padding: 40px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.75);
+}
 
 
 img {
