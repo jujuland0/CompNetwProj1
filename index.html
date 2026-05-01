@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Computer Networking Project 1 Homepage</h1>
+	<h1>Computer Networking Project 1 and 2 Homepage</h1>
 
 	<nav>
 		<a href="index.html">Home</a>
@@ -16,7 +16,22 @@
 		<a href="protocols.html">Protocols</a>
 	</nav>
 
-	<p>This is the homepage for Computer Networking Project 1.</p>
+	<p>This is the homepage for Computer Networking Project 1 and also 2.</p>
+
+	<h2>Here is an XSS Protection Demo : </h2>
+	<p>Input text below to be sanitized by DOMPurify</p>
+	<input type="text" id="userInput" placeholder="Enter text here">
+	<button onclick="sanitizeInput()">Submit</button>
+
+	<p>Sanitized Output : <span id="sanitizedOutput"></span></p>
+	<script src="https://cdn.jsdelivr.net/npm/dompurify@2.2.0/dist/purify.min.js"></script>
+	<script>
+		function sanitizeInput() {
+			const userInput = document.getElementById('userInput').value;
+			const sanitizedOutput = DOMPurify.sanitize(userInput);
+			document.getElementById('sanitizedOutput').textContent = sanitizedOutput;
+		}
+	</script>
 
 </body>
 </html>
